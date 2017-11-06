@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+
+<script type="text/javascript" src="calci.js">
+	
+</script>
+
+<link rel="stylesheet" type="text/css" href="calc.css">
+
+<body>
+<center>
+<div id="container">
+<form id="frm">
+	<h2 style="margin: 2px;">WEB CALCULATOR</h2>
+	<input id="answe" type="box" readonly="readonly" name="answe" value="">
+	<input id="txt" type="textbox" readonly="readonly" name="txt"><br>
+	<input class="btna" type="button" name="btnf" value="x!" onclick="fact()">
+	<input class="btna" type="button" name="btnr" value="&radic;" onclick="sqrt()">
+	<input class="btnc" type="button" name="bcks" value="&larr;" onclick="bck()">
+	<input class="btnc" type="button" name="AC" value="AC" onclick="clr()"><br>
+	<input class="btna" type="button" name="sin" value="sin" onclick="sinee()">
+	<input class="btna" type="button" name="cos" value="cos" onclick="cosee()">
+	<input class="btna" type="button" name="tan" value="tan" onclick="tanee()">
+	<input class="btnc" type="button" name="btnans" value="ANS" onclick="prevans()"><br>
+	<input class="btna" type="button" name="btnl" value="(" onclick="display(this.value)">
+	<input class="btna" type="button" name="btnr" value=")" onclick="display(this.value)">
+	<input class="btna" type="button" name="log" value="ln" onclick="loga()">
+	<input class="btna" id="num" type="button" name="divide" value="/" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn7" value="7" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn8" value="8" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn9" value="9" onclick="display(this.value)">
+	<input class="btna" type="button" name="btnm" value="*" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn4" value="4" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn5" value="5" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn6" value="6" onclick="display(this.value)">
+	<input class="btna" type="button" name="btns" value="-" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn1" value="1" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn2" value="2" onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn3" value="3" onclick="display(this.value)">
+	<input class="btna" id="num" type="button" name="btna" value="+" onclick="display(this.value)">
+	<input class="btna" type="button" name="btn." value="." onclick="display(this.value)">
+	<input class="btn" id="num" type="button" name="btn0" value="0" onclick="display(this.value)">
+	<input class="btna" type="button" name="btnpi" value="&pi;" onclick="display(pi())">
+	<input class="btnc" id="answer" type="button" name="btneq" value="=" onclick="evaluation()">
+</form>
+</div>
+</center>
+</body>
+</html>
