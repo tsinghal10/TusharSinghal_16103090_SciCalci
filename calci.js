@@ -17,10 +17,15 @@ var ans='';
 	}
 
 	function evaluation(){
-		frm.txt.value=eval(frm.txt.value);
-		ans=frm.txt.value;
+		var s=eval(frm.txt.value);
+		if(s!="Infinity")
+			{frm.txt.value=eval(frm.txt.value);
+			ans=frm.txt.value;
 		p=true;
-		frm.answe.value="ANS= "+ans;
+		frm.answe.value="ANS= "+ans;}
+		else
+			{frm.txt.value="Error";p=true;}
+		
 	}
 
 	function prevans(){
